@@ -1,0 +1,27 @@
+{
+  "name": "iit-ism-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjchirag7/IIT-ISM-WEBSITE.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "cjchirag7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjchirag7/IIT-ISM-WEBSITE/issues"
+  },
+  "homepage": "https://github.com/cjchirag7/IIT-ISM-WEBSITE#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
