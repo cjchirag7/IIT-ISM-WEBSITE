@@ -8,7 +8,7 @@
 	margin: 0px auto;
 	padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
-    min-height:50px;
+    min-height:400px;
 }
 
 .footer{
@@ -33,6 +33,7 @@ address {
 body{
     padding:50px 0px 0px 0px;
     z-index:0;
+    background-color: #ffff99
 }
 
 .reserve{
@@ -44,6 +45,9 @@ body{
      background-color: #512DA8;
 }
 
+.nav-sub{
+  background-color: #99ff33;   
+}
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -55,12 +59,13 @@ body{
 }
 
 .carousel-item {
-  height: 300px;
+  height: 340px;
+
 }
 
 .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 300px;
+    min-height: 340px;
 }
