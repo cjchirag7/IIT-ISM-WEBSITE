@@ -29,7 +29,7 @@
               
                  <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item mr-3"><a class="nav-link" data-toggle="tooltip" title="About us" data-placement="bottom" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                <li class="nav-item mr-3"><a class="nav-link" data-toggle="tooltip" title="About us" data-placement="bottom" href="./about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
               <li class="nav-item mr-3"><a class="nav-link" data-toggle="tooltip" data-html="true" title="View Profiles of <br> <strong>Faculty Members</strong>" data-placement="bottom" href="Faculty.html"><span class="fa fa-user-circle fa-lg"></span> Faculty</a></li>
                     <li class="nav-item mr-3"><a class="nav-link" data-toggle="tooltip" title="View all Notices" data-placement="bottom" href="Notices.html"><span class="fa fa-file-pdf-o fa-lg"></span> Notices</a></li>
                     <li class="nav-item mr-3"><a class="nav-link" data-toggle="tooltip" data-html="true" title="Login to <br> <strong>IIT (ISM) Mail</strong>" data-placement="bottom" href="http://mail.iitism.ac.in/"><span class="fa fa-envelope fa-lg"></span> Mail</a></li>
@@ -130,14 +130,126 @@
     							<a class="dropdown-item" href="#">Finance Committee</a>
       							</div>
 								</div>
-                    <a role="button" class="btn btn-block btn-secondary" href="#">Chairman</a>
-                    <a role="button" class="btn btn-block btn-success" href="#">Director</a>
-                    <a role="button" class="btn btn-block btn-dark" href="#">Deputy Director</a>
-					<a role="button" class="btn btn-block btn-warning" href="#">General Administration</a>
-                    <a role="button" class="btn btn-block btn-info" href="#">Academic Administration</a>
-                    <a role="button" class="btn btn-block btn-danger" href="#">Hostel Administration</a>                
+                    <a role="button" class="btn btn-block btn-secondary"  id="chairman">Chairman</a>
+                    <a role="button" class="btn btn-block btn-success"  id="dir">Director</a>
+                    <a role="button" class="btn btn-block btn-warning" id="dep_dir">Deputy Director</a> <br>
+					           <div class="dropdown">
+                  <button class="btn btn-block btn-danger dropdown-toggle" type="button" id="gen_admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    General Administration
+                  </button>
+                  <br> 
+                  <div class="dropdown-menu" aria-labelledby="gen_admin">
+                  <a class="dropdown-item" href="#">Registrar</a>
+                  <a class="dropdown-item" href="#">Academic &amp; Exam Section</a>
+                  <a class="dropdown-item" href="#">Finance &amp; Accounts Section</a>
+                  <a class="dropdown-item" href="#">Establishment Section</a>
+                  <a class="dropdown-item" href="#">Sports Section</a>
+                  <a class="dropdown-item" href="#">Purchase &amp; Store Section</a>  
+                  <a class="dropdown-item" href="#">Student &amp; Welfare Section</a>  
+                  <a class="dropdown-item" href="#">Campus Security</a>  
+                  <a class="dropdown-item" href="#">Horticulturist</a>    
+                  <a class="dropdown-item" href="#">Estate Officer</a>  
+                  <a class="dropdown-item" href="#">Campus Maintenance</a>
+                    </div>
+                </div>
+                  <div class="dropdown">
+                  <button class="btn btn-block btn-info dropdown-toggle" type="button" id="acad_admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Academic Administration
+                  </button>
+                  <br> 
+                  <div class="dropdown-menu" aria-labelledby="acad_admin">
+                  <a class="dropdown-item" href="#">Senate</a>
+                  <a class="dropdown-item" href="#">Deans</a>
+                  <a class="dropdown-item" href="#">PCE</a>
+                  <a class="dropdown-item" href="#">Associate Deans</a>
+                  <a class="dropdown-item" href="#">HODs</a>
+                  <a class="dropdown-item" href="#">Library</a>
+                    </div>
+                </div>
+                    <a role="button" class="btn btn-block btn-success" href="#">Hostel Administration</a>                
 
       							  </div>
+                  <div id="chairModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Prof. D. D. Misra (Chairman)</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                  
+                  <div class="col-12 col-md-4">
+                    <img src="img/cman.jpg"> <br>
+                    Email: <a href="href="mailto:chairman@iitism.ac.in"> chairman@iitism.ac.in </a> <br> <br>
+                    </div>                  
+                  <div class="col-12 col-md-8">
+               
+                  <em>Prof. Misra</em> is having more than 35 years of teaching, research and administrative experience. He worked at various administrative levels including Director CMRI, Dhanbad.
+                  </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+        <div id="dirModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Prof. Rajiv Shekhar (Director)</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                     <div class="row">
+                  
+                  <div class="col-12 col-md-4">
+                    <img src="img/dt.jpg"> <br>
+                    Email: <a href="href="mailto:director@iitism.ac.in"> director@iitism.ac.in </a> <br>
+                    Tel. No. : <a href="tel:+913262235201"> +91-326-223-5201 </a> <br> <br>
+                   <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-warning" href="http://www.iitk.ac.in/new/rajiv-shekhar"><i class="fa fa-newspaper-o"></i> Details </a>
+                    <a role="button" class="btn btn-success" href="CV_dir.pdf"><i class="fa fa-drivers-license"></i> CV </a>
+                  </div>                  
+                <br> <br>
+                </div>
+                  <div class="col-12 col-md-8">
+               
+                  <em> Prof. Shekhar </em> is having 24+ years of teaching and research experience at IIT Kanpur with focus on industrial applications. Well-rounded, go-getter academic with experience ranging from institution building, engineering R&D, project management, policy, and administration. Multi-disciplinary expertise: metals extraction, manufacturing, environmental remediation, engineering economics, solar thermal energy, electric power system optimization and policy. Good understanding of process for scaling technology from laboratory to industry. Good contacts in industry, R&D organizations, and multi-lateral institutions.
+                  </div>
+                </div>
+
+                  </div>
+            </div>
+        </div>
+        </div>
+        <div id="dep_dirModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Prof. J.K. Pattanayak (Deputy Director)</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                  
+                  <div class="col-12 col-md-4">
+                    <img src="img/dydt.jpg"> <br>
+                    Email: <a href="href="mailto:dydir@iitism.ac.in"> dydir@iitism.ac.in </a> <br>
+                    Tel. No. : <a href="tel:+913262235210"> +91-326-223-5210 </a> <br>
+                    <a role="button" class="btn btn-success" href="CV_dydir.pdf"><i class="fa fa-drivers-license"></i> CV </a><br><br>
+                  </div>                  
+                  <div class="col-12 col-md-8">
+                  <em>Prof. Pattanayak</em> is having more than 30 years of teaching, research and administrative experience. His areas of specialization and research interest include Financial Accounting, Corporate Finance, International Finance and Corporate Social Responsibility and has supervised 17 Ph.D. students. He worked at various administrative levels in the Institute as Head, Department of Management Studies, Associate Dean (Project & Planning), Dean (Infrastructure)etc. 
+                  </div>
+                  </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+        
                               </div>
                  </div>                
 
@@ -468,7 +580,19 @@
  <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
-        });
+       
+       });
+        $("#chairman").click(function(){
+          $('#chairModal').modal('toggle');
+        }) ;       
+
+        $("#dir").click(function(){
+          $('#dirModal').modal('toggle');
+        }) ;       
+
+        $("#dep_dir").click(function(){
+          $('#dep_dirModal').modal('toggle');
+        }) ;       
     </script>
 </body>
 

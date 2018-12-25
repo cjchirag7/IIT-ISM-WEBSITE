@@ -152,3 +152,12 @@ body{
             -webkit-transition: .1s;
             transition: .1s;
         }
+
+   .modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal-header button {
+    color: floralwhite; }
+
+.modal-body {
+  background: #D1C4E9; }
