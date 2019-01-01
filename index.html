@@ -18,7 +18,7 @@
     <title>IIT (ISM) DHANBAD | INDIAN INSTITUTE OF TECHNOLOGY (INDIAN SCHOOL OF MINES) DHANBAD </title>
 </head>
 
-<body>
+<body id="thin">
 <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -52,8 +52,12 @@
                 <div class="col-12 col-sm-3 mr-auto">
                 	<br>
                 	<br> <br> <br>
-                	<br> <br>
+                    <!-- Old 
                     <h1 style="color: Yellow"> <abbr title="Indian Institute of Technology (Indian School of Mines) Dhanbad"> IIT &nbsp; (ISM) DHANBAD</abbr></h1>
+                -->
+                <canvas id="canvas_title" height="300">
+IIT (ISM) DHANBAD</canvas>
+
                    </div>
                    <div class="offset-sm-7 col-12 col-sm-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
@@ -64,7 +68,7 @@
           <div class="col-12 col-sm-8 mr-auto">
                     <br> <br>
                     <br> <br>
-                    <br> <br>
+                    <br>
                     <h5>Legacy since 1926</h5>
           </div>
                    </div>
@@ -563,6 +567,7 @@
                         <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/ismdhanbad/"><i class="fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="https://in.linkedin.com/company/iit-ism-dhanbad"><i class="fa fa-linkedin"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/iitismd?lang=en"><i class="fa fa-twitter"></i></a>
+                        <a class="btn" href="https://www.youtube.com/channel/UCt9UKgRsW3EMM9eCrERTTAA"><span class="fa fa-youtube-play" style="font-size: 260%"></span></a>
                     </div>
                 </div>
            </div>
@@ -581,9 +586,10 @@
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
        $(window).scroll(function(){
-  $('nav').toggleClass('trans', $(this).scrollTop() > 535);
+  $('nav').toggleClass('trans', $(this).scrollTop() > 650);
 });
        });
+
         $("#chairman").click(function(){
           $('#chairModal').modal('toggle');
         }) ;       
@@ -595,6 +601,21 @@
         $("#dep_dir").click(function(){
           $('#dep_dirModal').modal('toggle');
         }) ;       
+    </script>
+    <script>
+var c = document.getElementById("canvas_title");
+var ctx = c.getContext("2d");
+
+var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "#FFFF33");
+//gradient.addColorStop("0.5", "gold");
+gradient.addColorStop("1.0", "gold");
+// Fill with gradient
+ctx.fillStyle =gradient;
+ctx.font="bold 50pt Helvetica";
+ctx.fillText("IIT (ISM)", 2, 80);
+ctx.fillText("Dhanbad", 2, 165);   
+
     </script>
 </body>
 
