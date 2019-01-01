@@ -50,7 +50,10 @@ background: -o-linear-gradient(top,  #054284; 0%,#3D536E 8%,#0e0e0e 100%); /* Op
 background: -ms-linear-gradient(top,  #054284; 0%,#3D536E 8%,#0e0e0e 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #054284; 0%,#3D536E 8%,#0e0e0e 100%); /* W3C */
 z-index: 1;
-  opacity: 0.9;
+ 
+}
+.trans{
+	opacity: 0.65;
 
 }
 

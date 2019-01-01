@@ -580,7 +580,9 @@
  <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
-       
+       $(window).scroll(function(){
+  $('nav').toggleClass('trans', $(this).scrollTop() > 535);
+});
        });
         $("#chairman").click(function(){
           $('#chairModal').modal('toggle');
