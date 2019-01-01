@@ -42,6 +42,7 @@ body{
 }
 
 .navbar-dark {
+ transition:500ms ease;
 background: #054284;; /* Old browsers */
 background: -moz-linear-gradient(top,  #054284; 0%, #3D536E 8%, #0e0e0e 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#054284), color-stop(8%,#3D536E), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
