@@ -18,8 +18,13 @@
     <title>IIT (ISM) DHANBAD | INDIAN INSTITUTE OF TECHNOLOGY (INDIAN SCHOOL OF MINES) DHANBAD </title>
 </head>
 
-<body id="thin">
-<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+<body id="thin" style="padding-top: 0px">
+     <header class="jumbotron" style="background: url(img/final.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;">
+       <nav class="navbar navbar-dark navbar-expand-md trans fixed-top">
         <div class="container">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -46,8 +51,9 @@
                 </span> 
             
     </nav>
-     <header class="jumbotron" style="background-image: url(img/final.jpg); background-size: cover;">
+ 
         <div class="container">
+        
             <div class="home-bg row row-header align-items-center" >
                 <div class="col-12 col-sm-3 mr-auto">
                 	<br>
@@ -72,6 +78,9 @@ IIT (ISM) DHANBAD</canvas>
           </div>
                    </div>
                   </div>
+    <br>
+    <br>
+    <br>
     </header>
         
 
@@ -534,6 +543,38 @@ IIT (ISM) DHANBAD</canvas>
 </div>
 </div>
 
+<div class="row">
+<div class="col-12"> 
+<h3 align="center"> <u> Videos to Watch </u></h3>
+<br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4 ml-auto">
+    <!-- 16:9 -->
+    <h4 align="center">Director's speech at 39th Convocation</h4>
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j1dT4L3Eeaw"></iframe>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <!-- 4:3 -->
+    <h4 align="center">Campus Tour</h4>
+    <div class="embed-responsive embed-responsive-4by3 ">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2PjoLe6yics"></iframe>
+    </div>
+  </div>
+  <div class="col-sm-4 mr-auto">
+    <!-- 4:3 -->
+    <h4 align="center">Chairman's speech at Foundation Day</h4>
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k8DD7fQYUss"></iframe>
+    </div>
+  </div>
+</div>
+<br>
+
 
 
  </div>
@@ -585,7 +626,12 @@ IIT (ISM) DHANBAD</canvas>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
        $(window).scroll(function(){
-  $('nav').toggleClass('trans', $(this).scrollTop() > 580);
+   if($(this).scrollTop() < 615) { 
+              $('.navbar').addClass('trans');
+          } else {
+              $('.navbar').removeClass('trans');
+          }
+
 });
        });
 
