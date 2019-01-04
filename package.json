@@ -10,7 +10,7 @@
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
-    //"usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin astr.html -d dist --htmlmin -o dist/astr.html && usemin book.html -d dist --htmlmin -o dist/book.html && usemin chess.html -d dist --htmlmin -o dist/chess.html && usemin cricket.html -d dist --htmlmin -o dist/cricket.html && usemin drama.html -d dist --htmlmin -o dist/drama.html && usemin film.html -d dist --htmlmin -o dist/film.html && usemin foto.html -d dist --htmlmin -o dist/foto.html && usemin hock.html -d dist --htmlmin -o dist/hock.html && usemin lawn.html -d dist --htmlmin -o dist/lawn.html && usemin litc.html -d dist --htmlmin -o dist/litc.html && usemin litm.html -d dist --htmlmin -o dist/litm.html && usemin mailer.html -d dist --htmlmin -o dist/mailer.html && usemin manthan.html -d dist --htmlmin -o dist/manthan.html && usemin roboism.html -d dist --htmlmin -o dist/roboism.html && usemin spec.html -d dist --htmlmin -o dist/spec.html && usemin srijan.html -d dist --htmlmin -o dist/srijan.html && usemin tt.html -d dist --htmlmin -o dist/tt.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin astr.html -d dist --htmlmin -o dist/astr.html && usemin book.html -d dist --htmlmin -o dist/book.html && usemin chess.html -d dist --htmlmin -o dist/chess.html && usemin cricket.html -d dist --htmlmin -o dist/cricket.html && usemin drama.html -d dist --htmlmin -o dist/drama.html && usemin film.html -d dist --htmlmin -o dist/film.html && usemin foto.html -d dist --htmlmin -o dist/foto.html && usemin hock.html -d dist --htmlmin -o dist/hock.html && usemin lawn.html -d dist --htmlmin -o dist/lawn.html && usemin litc.html -d dist --htmlmin -o dist/litc.html && usemin litm.html -d dist --htmlmin -o dist/litm.html && usemin mailer.html -d dist --htmlmin -o dist/mailer.html && usemin manthan.html -d dist --htmlmin -o dist/manthan.html && usemin roboism.html -d dist --htmlmin -o dist/roboism.html && usemin spec.html -d dist --htmlmin -o dist/spec.html && usemin srijan.html -d dist --htmlmin -o dist/srijan.html && usemin tt.html -d dist --htmlmin -o dist/tt.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "repository": {
@@ -32,6 +32,6 @@
     "lite-server": "^2.4.0",
     "rimraf": "^2.6.3",
     "uglifyjs": "^2.4.11",
-    "usemin-cli": "^0.5.1",
+    "usemin-cli": "^0.5.1"
   }
 }
